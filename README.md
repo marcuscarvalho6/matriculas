@@ -72,9 +72,9 @@ Remover uma matrícula.
 
 ### 7. Instalação do projeto
 
-Execute o seguinte comando no terminal:
+Execute o seguinte comando no terminal em uma pasta de sua preferência:
 
-`git@github.com:marcuscarvalho6/matriculas.git`
+`git clone git@github.com:marcuscarvalho6/matriculas.git`
 
 Prossiga para a pasta da aplicação
 
