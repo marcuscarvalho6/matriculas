@@ -141,7 +141,7 @@ Para executar o projeto, utilize o Valet ou simplesmente execute:
 
 #### Listagem de Alunos
 
-`GET http://127.0.0.1:8000/students`
+`GET http://127.0.0.1:8000/api/students`
 
 Parâmetros aceitos:
 
@@ -159,14 +159,14 @@ page (Integer)
 
 Exemplo, para listar estudantes ordenados decrescentemente por ID:
 
-`GET http://127.0.0.1:8000/students?orderBy=-id`
+`GET http://127.0.0.1:8000/api/students?orderBy=-id`
 
 
 
 Permite que um usuário seja buscado através do nome ou email.
 Exemplo de busca:
 
-`GET http://127.0.0.1:8000/students?search=Maria`
+`GET http://127.0.0.1:8000/api/students?search=Maria`
 
 Exemplo de retorno:
 
@@ -201,7 +201,7 @@ Exemplo de retorno:
 
 Permite efetuar o cadastro de um novo Aluno. Para isso, os seguintes campos devem ser informados:
 
-`POST http://127.0.0.1:8000/students`
+`POST http://127.0.0.1:8000/api/students`
 
 Parâmetros da requisição (form data):
 
@@ -216,7 +216,7 @@ Parâmetros da requisição (form data):
 
 Permite fazer alteraçãos nos dados de um Aluno especifico.
 
-`PUT|PATCH http://127.0.0.1:8000/students/{id}`
+`PUT|PATCH http://127.0.0.1:8000/api/students/{id}`
 
 Parâmetros da requisição (form data):
 
@@ -231,7 +231,7 @@ Parâmetros da requisição (form data):
 
 Exibe detalhes do cadastro de um aluno específico.
 
-`GET http://127.0.0.1:8000/students/1`
+`GET http://127.0.0.1:8000/api/students/1`
 
 Exemplo de retorno da requisição:
 
@@ -251,14 +251,14 @@ Exemplo de retorno da requisição:
 
 Permite excluir um Aluno específico.
 
-`DELETE http://127.0.0.1:8000/students/1`
+`DELETE http://127.0.0.1:8000/api/students/1`
 
 
 ## Cursos
 
 #### Listagem de Cursos
 
-`GET http://127.0.0.1:8000/courses`
+`GET http://127.0.0.1:8000/api/courses`
 
 Parâmetros aceitos:
 
@@ -276,12 +276,12 @@ page (Integer)
 
 Exemplo, para listar cursos ordenados decrescentemente por título:
 
-`GET http://127.0.0.1:8000/courses?orderBy=-title`
+`GET http://127.0.0.1:8000/api/courses?orderBy=-title`
 
 Permite que um curso seja buscado através do título ou descrição.
 Exemplo de busca:
 
-`GET http://127.0.0.1:8000/courses?search=Gas+Plant`
+`GET http://127.0.0.1:8000/api/courses?search=Gas+Plant`
 
 Exemplo de retorno:
 
@@ -314,7 +314,7 @@ Exemplo de retorno:
 
 Permite efetuar o cadastro de um novo Curso. Para isso, os seguintes campos devem ser informados:
 
-`POST http://127.0.0.1:8000/courses`
+`POST http://127.0.0.1:8000/api/courses`
 
 Parâmetros da requisição (form data):
 
@@ -327,7 +327,7 @@ Parâmetros da requisição (form data):
 
 Permite fazer alteraçãos nos dados de um Curso especifico.
 
-`PUT|PATCH http://127.0.0.1:8000/courses/{id}`
+`PUT|PATCH http://127.0.0.1:8000/api/courses/{id}`
 
 Parâmetros da requisição (form data):
 
@@ -340,7 +340,7 @@ Parâmetros da requisição (form data):
 
 Exibe detalhes do cadastro de um curso específico.
 
-`GET http://127.0.0.1:8000/courses/1`
+`GET http://127.0.0.1:8000/api/courses/1`
 
 Exemplo de retorno da requisição:
 
@@ -358,14 +358,14 @@ Exemplo de retorno da requisição:
 
 Permite excluir um Curso específico.
 
-`DELETE http://127.0.0.1:8000/courses/1`
+`DELETE http://127.0.0.1:8000/api/courses/1`
 
 
 ## Matrícula
 
 #### Listagem de Matriculas
 
-`GET http://127.0.0.1:8000/studentRegistrations`
+`GET http://127.0.0.1:8000/api/studentRegistrations`
 
 Parâmetros aceitos:
 
@@ -383,12 +383,12 @@ page (Integer)
 
 Exemplo, para listar matriculas ordenados decrescentemente por id:
 
-`GET http://127.0.0.1:8000/studentRegistrations?orderBy=-id`
+`GET http://127.0.0.1:8000/api/studentRegistrations?orderBy=-id`
 
 Permite que uma matrícula seja buscado através do nome ou email do aluno.
 Exemplo de busca:
 
-`GET http://127.0.0.1:8000/studentRegistrations?search=Adriana`
+`GET http://127.0.0.1:8000/api/studentRegistrations?search=Adriana`
 
 Exemplo de retorno:
 
@@ -436,7 +436,7 @@ Exemplo de retorno:
 
 Permite efetuar o cadastro de uma matrícula de um aluno em um Curso. Para isso, os seguintes campos devem ser informados:
 
-`POST http://127.0.0.1:8000/studentRegistrations`
+`POST http://127.0.0.1:8000/api/studentRegistrations`
 
 Parâmetros da requisição (form data):
 
@@ -449,7 +449,7 @@ Parâmetros da requisição (form data):
 
 Permite fazer alteraçãos nos dados de uma Matrícula de um aluno em um Curso especifico.
 
-`PUT|PATCH http://127.0.0.1:8000/studentRegistrations/{id}`
+`PUT|PATCH http://127.0.0.1:8000/api/studentRegistrations/{id}`
 
 Parâmetros da requisição (form data):
 
@@ -462,7 +462,7 @@ Parâmetros da requisição (form data):
 
 Exibe detalhes do cadastro de um curso específico.
 
-`GET http://127.0.0.1:8000/studentRegistrations/1`
+`GET http://127.0.0.1:8000/api/studentRegistrations/1`
 
 Exemplo de retorno da requisição:
 
@@ -484,7 +484,7 @@ Exemplo de retorno da requisição:
 
 Permite excluir uma Matrícula específica.
 
-`DELETE http://127.0.0.1:8000/studentRegistrations/1`
+`DELETE http://127.0.0.1:8000/api/studentRegistrations/1`
 
 ## Relatórios
 
